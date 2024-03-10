@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .roll{font-size: 50px;margin-left: 30px;}
+    </style>
+</head>
+<body><div id="result"></div>
+    <a href="#" onclick="roll()"  class="roll">Roll</a>
+    
+    <script >
+        function roll(){
+            let rand=Math.floor(Math.random()*6)+1;
+            document.getElementById('result').innerHTML="<img src='image/"+rand+".jpg'/>";
+        };
+
+    </script>
+</body>
+</html>
